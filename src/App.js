@@ -39,6 +39,7 @@ function App() {
     fetchMoviesHandler();
   }, [fetchMoviesHandler]);
 
+  // Two Way Binding
   function addMovieHandler(movie) {
     console.log(movie);
   }
@@ -60,6 +61,7 @@ function App() {
   return (
     <React.Fragment>
       <section>
+        {/* Two Way Binding  */}
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
       <section>
